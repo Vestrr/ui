@@ -1,0 +1,18 @@
+<md-toolbar class="vestrr-toolbar">
+  <div class="md-toolbar-tools">
+    <div class="logo-main"></div>
+    <span flex></span>
+    <a href="" class="btn-light">Sign in</a>
+    <md-button class="btn-bold" ng-click="new_dress($event)">
+      LIST A DRESS
+    </md-button>
+    <md-button class="md-fab md-mini" ng-click="go('dashboard.main')" aria-label="Favorite">
+      <i class="fa fa-user" aria-hidden="true"></i>
+    </md-button>
+  </div>
+</md-toolbar>
+<div class="global-search" ng-show="is_not('dashboard.main')">
+  <input type="" name="" placeholder="Search">
+</div>
+
+<div ui-view style="width:100%"></div>

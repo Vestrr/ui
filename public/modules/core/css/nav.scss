@@ -1,0 +1,118 @@
+.nav-header {
+  height: 62px;
+  background-color: #DDD;
+  position: relative;
+}
+
+.nav-user-fab {
+  position: absolute;
+  bottom: -20px;
+  right: 15px;
+  background-color: grey;
+}
+
+.nav-user-details {
+  position: absolute;
+  bottom: 0px;
+  padding-left: 70px;
+  a > {
+    width: 100px;
+  }
+}
+
+.nav-subtitle {
+  background-color: #26303a;
+  color: #aaa;
+  font-size: 13px;
+  padding-left: 22px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.ant-nav {
+  background-color: white;
+  color: #717171;
+  font-weight: 300;
+  box-shadow: none;
+}
+
+.nav-button {
+  text-align: left;
+  margin: 0px;
+  height: 40px;
+  padding-left: 15px;
+  color: white;
+  background-color: #26303a;
+  text-transform: none;
+  font-weight: 300;
+  border: none;
+  border-radius: 0px;
+
+  &:hover {
+    background-color: #525c66 !important;
+    color: orange;
+  }
+
+  &:focus {
+    background-color: #525c66 !important;
+    color: orange;
+  }
+
+  i {
+    width: 30px;
+  }
+}
+
+.fa-ant-product {
+  font-size: 16px;
+  padding-left: 3px;
+}
+
+.fa-ant-order {
+  font-size: 14px;
+  padding-left: 3px;
+  vertical-align: top;
+  padding-top: 12px;
+}
+
+.fa-ant-customer {
+  font-size: 14px;
+  padding-left: 3px;
+}
+
+.fa-ant-sync {
+  font-size: 14px;
+  padding-left: 3px;
+}
+
+.fa-ant-forecast {
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+.fa-ant-setting {
+  font-size: 16px;
+  padding-left: 3px;
+}
+
+.fa-ant-rule {
+  font-size: 14px;
+  padding-left: 5px;
+  vertical-align: top;
+  padding-top: 12px;
+}
+
+.nav-header {
+  padding-left: 53px !important;
+  height: 62px;
+  background-image: url("./modules/core/img/ant-logo.png");
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 23px;
+}
+
+.chev-right {
+  right: 0px;
+  position: absolute;
+  top: 13px;
+}

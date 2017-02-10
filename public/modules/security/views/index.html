@@ -1,0 +1,23 @@
+<md-content class="topSpace" layout="row">
+  <span flex></span>
+      
+        <form ng-submit="login()">
+          <div layout="column">
+            <div layout="row">
+              <md-input-container flex>
+                <label>Email</label>
+                <input ng-model="user.email" type="email">
+              </md-input-container>
+              <md-input-container flex>
+                <label>Password</label>
+                <input ng-model="user.password" type="password">
+              </md-input-container>
+            </div>
+            <div layout="row" class="login-actions">
+              <md-button class="md-raised" type="submit">Login</md-button>
+            </div>
+          </div>
+        </form>
+
+  <span flex></span>
+</md-content>

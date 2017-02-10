@@ -1,0 +1,59 @@
+<div class="new-dress">
+  <div class="newdress-progress">
+    Add Dress
+    <br>
+    <br>
+    <md-progress-linear md-mode="determinate" value="{{progress.value}}"></md-progress-linear>
+    <span style="color: #eee; font-size: 12px;">STEP {{progress.numval}}/5</span>
+  </div>
+
+  <div ng-show="progress.numval == 1">
+    <h2>Set the scene: Chuck on a picture</h2>
+
+    <div class="image-uploader">
+      <center>Click here to upload images</center>
+    </div>
+
+    <br>
+  </div>
+
+  <div ng-show="progress.numval == 2">
+    <h2>The basics: What kind of dress are you listing</h2>
+
+    <label>What is the designer of your dress?</label>
+    <input type="text" name="" class="form-control">
+
+    <br>
+    <label>What is the size of your dress?</label>
+    <input type="text" name="" class="form-control">
+
+    <br>
+    <label>What is the color of your dress?</label>
+    <input type="text" name="" class="form-control">
+
+    <br>
+    <label>Fit</label>
+    <br>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="multi-select">Runs Small</div>
+      </div>
+      <div class="col-xs-4">
+        <div class="multi-select">True to Fit</div>
+      </div>
+      <div class="col-xs-4">
+        <div class="multi-select">Runs Large</div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6">
+      <!-- <button class="btn btn-transparent">Next</button> -->
+    </div>
+    <div class="col-xs-6 right">
+      <button class="btn btn-transparent" ng-click="next()">Next</button>
+    </div>
+  </div>
+</div>

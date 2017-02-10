@@ -1,0 +1,53 @@
+<md-content class="topSpace" layout="row">
+    <span flex></span>
+    <div layout="column" flex=100 class="center-content">
+      <div layout="row">
+        <div layout="column" flex="95">
+          <div><h1>Dashboard</h1></div>
+          <div class="vestrr-listing-box">
+            <div class="listing-label"><b>YOUR INCOMING RENTALS (OUT)</b></div>
+            <div class="vestrr-list">
+              <div class="listing-counter">{{dashboard.in_rentals.length}} upcoming rentals</div>
+              <div class="col-md-4 col-gt-3 single-list" ng-repeat="listing in dashboard.in_rentals">
+                <div class="list-content">
+                  <div class="list-image" ng-style="{'background-image': 'url(' + listing.images[0].url + ')'}"></div>
+                  <div class="list-details">
+                    <span style="color: #555; font-size: 14px;">#{{listing.id}}</span>
+                    <div>
+                      <span><b>{{format_time(listing.start_time)}} - {{format_time(listing.end_time)}}</b></span>
+                      <h2 style="margin: 0px;">{{get_status(listing.start_time, listing.end_time)}}</h2>
+                      <span style="color: #aaa; font-size: 12px;">{{listing.designer}} &middot;</span>
+                      <span style="color: #aaa; font-size: 12px;">{{listing.name}} &middot;</span>
+                      <span style="color: #aaa; font-size: 12px;">{{listing.size}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vestrr-listing-box">
+            <div class="listing-label"><b>YOUR INCOMING RENTALS (OUT)</b></div>
+            <div class="vestrr-list">
+              <div class="listing-counter">{{dashboard.in_rentals.length}} upcoming rentals</div>
+              <div class="col-md-4 col-gt-3 single-list" ng-repeat="listing in dashboard.out_rentals">
+                <div class="list-content">
+                  <div class="list-image" ng-style="{'background-image': 'url(' + listing.images[0].url + ')'}"></div>
+                  <div class="list-details">
+                    <span style="color: #555; font-size: 14px;">#{{listing.id}}</span>
+                    <div>
+                      <span><b>{{format_time(listing.start_time)}} - {{format_time(listing.end_time)}}</b></span>
+                      <h2 style="margin: 0px;">{{get_status(listing.start_time, listing.end_time)}}</h2>
+                      <span style="color: #aaa; font-size: 12px;">{{listing.designer}} &middot;</span>
+                      <span style="color: #aaa; font-size: 12px;">{{listing.name}} &middot;</span>
+                      <span style="color: #aaa; font-size: 12px;">{{listing.size}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</md-content>

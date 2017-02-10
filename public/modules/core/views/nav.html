@@ -1,0 +1,135 @@
+<md-content ng-controller="NavCtrl as ctrl">
+<!--   <div class="nav-header">
+    <div class="nav-user-details">
+      <h3 style="line-height: 0px;">AntHQ</h3>
+      <span><a href="#/settings">Upthere Store</a></span>
+    </div>
+    <div class="user-icon user-icon-lg nav-user-fab" style="background-color: #ACC">
+      Av
+    </div>
+  </div>
+ -->
+
+  <md-button ng-click="close()" class="md-primary" hide-gt-md>
+    Close Sidenav Left
+  </md-button>
+  <div layout="row" flex>
+
+    <md-button flex class="nav-button nav-header" ng-click="go('dashboard')">
+      {{shorten(current_member.company.name, 25)}}
+    </md-button>
+  </div>
+
+  <div layout="row" flex>
+
+    <md-button flex class="nav-button" ng-click="go('dashboard')">
+      <i class="fa fa-home fa-lg"></i>
+      <span>Home</span>
+      <i class="fa fa-chevron-right fa-sm chev-right"></i>
+
+    </md-button>
+  </div>
+  <div layout="row" flex>
+    <md-button flex class="nav-button" ng-click="go('products.list')">
+          <i class="fa fa-tag fa-lg fa-ant-product"></i>
+      <span>Products</span>
+            <i class="fa fa-chevron-right fa-sm chev-right"></i>
+    </md-button>
+  </div>
+  <div layout="row" flex>
+    <md-button flex class="nav-button" ng-click="go('orders.list')">
+        <i class="fa fa-shopping-bag fa-lg fa-ant-order"></i>
+        <span>Orders</span>
+              <i class="fa fa-chevron-right fa-sm chev-right"></i>
+    </md-button>
+  </div>
+  <div layout="row" flex>
+    <md-button flex class="nav-button" ng-click="go('orders')">
+          <i class="fa fa-users fa-lg fa-ant-customer"></i>
+      <span>Customers</span>
+            <i class="fa fa-chevron-right fa-sm chev-right"></i>
+    </md-button>
+  </div>
+
+  <div class="nav-subtitle">REPORTING & ANALYTICS</div>
+
+  <div layout="row" flex>
+    <md-button flex class="nav-button" ng-click="go('orders')">
+          <i class="fa fa-line-chart fa-lg fa-ant-customer"></i>
+      <span>Basic Reports</span>
+            <i class="fa fa-chevron-right fa-sm chev-right"></i>
+    </md-button>
+  </div>
+  <div layout="row" flex>
+    <md-button flex class="nav-button" ng-click="go('orders')">
+          <i class="fa fa-bolt fa-lg fa-ant-forecast"></i>
+      <span>Forecasting</span>
+            <i class="fa fa-chevron-right fa-sm chev-right"></i>
+    </md-button>
+  </div>
+
+  <div class="nav-subtitle">ADVANCED</div>
+
+  <div layout="row" flex>
+    <md-button flex class="nav-button" ng-click="go('orders')">
+          <i class="fa fa-code fa-lg fa-ant-rule"></i>
+      <span>Rules & Routing</span>
+            <i class="fa fa-chevron-right fa-sm chev-right"></i>
+    </md-button>
+  </div>
+
+<!--   <div layout="row" flex>
+    <md-button flex class="nav-button" ng-click="go('orders')">
+          <i class="fa fa-cubes fa-lg"></i>
+        &nbsp;  &nbsp;
+        Franchise Center</md-button>
+  </div> -->
+
+  <md-content style="position: fixed;bottom: 0px;width: 100%;">
+
+
+    <div layout="row" flex>
+      <md-button flex class="nav-button" ng-click="go('sync.list')">
+            <i class="fa fa-refresh fa-lg fa-ant-sync"></i>
+        <span>Sync center</span>
+              <i class="fa fa-chevron-right fa-sm chev-right"></i>
+      </md-button>
+    </div>
+    <div layout="row" flex>
+      <md-button flex class="nav-button" ng-click="go('apps.list')">
+            <i class="fa fa-plug fa-lg fa-ant-customer"></i>
+        <span>Apps & Plugins</span>
+              <i class="fa fa-chevron-right fa-sm chev-right"></i>
+      </md-button>
+    </div>
+    <div layout="row" flex>
+      <md-button flex class="nav-button" ng-click="go('settings.list')">
+            <i class="fa fa-cog fa-lg fa-ant-customer"></i>
+        <span>Accounts & Settings</span>
+              <i class="fa fa-chevron-right fa-sm chev-right"></i>
+      </md-button>
+    </div>
+
+    <form ng-submit="$event.preventDefault()" ng-show="">
+      <md-autocomplete
+          ng-disabled="isDisabled"
+          md-no-cache="noCache"
+          md-selected-item="item"
+          md-search-text="current_admin.selected_company.name"
+          md-selected-item-change="selectedItemChange(item)"
+          md-items="item in querySearch(search)"
+          md-item-text="item.name"
+          md-min-length="0"
+          placeholder="Switch company"
+          md-menu-class="autocomplete-custom-template">
+          
+        <md-item-template>
+          <span class="item-title">
+            <md-icon md-svg-icon="img/icons/octicon-repo.svg"></md-icon>
+            <span> {{item.name}} </span>
+          </span>
+        </md-item-template>
+      </md-autocomplete>
+    </form>
+  </md-content>
+</md-content>

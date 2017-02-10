@@ -1,0 +1,41 @@
+$darkred: #fe4365;
+$darkgrey: #2a363b;
+
+
+/*@import "bower_components/font-awesome/scss/font-awesome.scss";*/
+@import "node_modules/angular-material/angular-material.min.css";
+@import "node_modules/bootstrap/bootstrap.min.css";
+@import "node_modules/font-awesome.css";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/proximanova-regular-webfont.eot');
+  src: url('./fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/proximanova-regular-webfont.woff') format('woff'),
+       url('./fonts/proximanova-regular-webfont.ttf') format('truetype'),
+       url('./fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+
+}
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/proximanova-bold-webfont.eot');
+  src: url('./fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/proximanova-bold-webfont.woff') format('woff'),
+       url('./fonts/proximanova-bold-webfont.ttf') format('truetype'),
+       url('./fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+}
+
+
+@import "modules/core/css/color";
+@import "modules/core/css/common";
+@import "modules/core/css/core";
+@import "modules/core/css/footer";
+@import "modules/core/css/nav";
+@import "modules/dashboard/css/dashboard";
+@import "modules/security/css/security";

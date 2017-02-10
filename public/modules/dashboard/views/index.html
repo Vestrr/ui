@@ -1,0 +1,26 @@
+<div class="payment-alerts md-padding">
+  <div><b>Alerts<span style="color: #fe4365">*</span></b></div>
+  <div class="single-alert" ng-click="go(dashboard.alert.state)"><i class="fa fa-bell" style="color: #fe4365" aria-hidden="true"></i>&nbsp;{{dashboard.alert.message}}</div>
+</div>
+<md-content class="topSpace" layout="row">
+  <md-sidenav class="md-sidenav-left vestrr-sidenav" md-component-id="left" md-is-locked-open="true">
+    <a href="#/dashboard"><h2>Dashboard</h2></a>
+    <a href="#/dashboard/rentals"><h2>Rentals</h2></a>
+      <div class="sub-heading">
+        <div><a href="">Upcoming Rentals (in)</a></div>
+        <div><a href="">Rental History</a></div>
+        <div><a href="">Wishlist</a></div>
+      </div>
+    <a href="#/dashboard/closet"><h2>Vestrr Closet</h2></a>
+      <div class="sub-heading">
+        <div><a href="">Upcoming Rentals (out)</a></div>
+        <div><a href="">Rental History</a></div>
+        <div><a href="">Dresses</a></div>
+      </div>
+    <a href="#/dashboard/profile"><h2>Profile</h2></a>
+    <a href="#/dashboard/addresses"><h2>Addresses</h2></a>
+    <a href="#/dashboard/payments"><h2>Payments</h2></a>
+    <a href="#/dashboard/signout"><h2>Sign out</h2></a>
+  </md-sidenav>
+  <div ui-view="" style="width:100%"></div>
+</md-content>

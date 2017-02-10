@@ -1,0 +1,35 @@
+.payment-alerts{
+  background-color: $darkgrey;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+  padding-top: 5px;
+  margin-bottom: 25px;
+  .single-alert {
+    background-color: #eee;
+    color: $darkgrey;
+    border-radius: 50px;
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 4px;
+    margin-top: 3px;
+  }
+}
+
+.vestrr-sidenav {
+  padding-left: 50px;
+  a {
+    color: $darkgrey;
+    cursor: pointer;
+    h2 {
+      padding: 0;
+      margin: 0;
+      line-height: 1.8;
+    }
+  }
+
+  .sub-heading {
+    padding-left: 15px;
+  }
+}

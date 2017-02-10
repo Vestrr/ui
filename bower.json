@@ -1,0 +1,30 @@
+{
+  "name": "ant-admin",
+  "version": "1.0.0",
+  "main": "index.html",
+  "directory": "public/bower_components",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "2.0",
+    "underscore": "~1.5",
+    "bootstrap": "3.1",
+    "angular-ui-router": "0.3.2",
+    "angular-ui-utils": "0.1",
+    "angular-bootstrap": "0.10",
+    "moment": "2.5",
+    "font-awesome": "4.0",
+    "angular-translate": "2.7.2",
+    "angular-translate-loader-url": "2.7.2",
+    "angular-translate-loader-static-files": "2.7.2",
+    "ng-token-auth": "0.0.29",
+    "angular-cookie": "4.1.0",
+    "restangular": "1.5.2",
+    "lodash": "3.8.0",
+    "textAngular": "1.5.12",
+    "pusher-js": "pusher#^4.0.0"
+  }
+}

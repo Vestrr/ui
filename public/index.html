@@ -1,0 +1,21 @@
+<!doctype html>
+<html data-ng-app="App">
+  <head>
+      <title>VESTRR</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <link rel='stylesheet' type='text/css' href='app.css'>
+  </head>
+
+  <body layout="row" data-ng-controller="CoreCtrl">
+    <md-content md-theme="orange" flex>
+      <div layout="column" layout-fill layout-align="top center">
+          <div ui-view style="width:100%"></div>
+      </div>
+    </md-content>
+    <script src="browserify.js"></script>
+    <script>_.includes = _.contains; </script>
+    <script src="app.config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
